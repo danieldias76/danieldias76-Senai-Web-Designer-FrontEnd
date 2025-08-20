@@ -1,0 +1,5 @@
+Daniel Dias da Conceição
+
+HARDWARE, são componentes físicos do computador. Como por Exemplo: Memória Ram, SSD, Fonte, Placa mãe e Processador.
+
+SOFTWARE, são programas do computador. Tais como: Sistema Operacional (Windows), ferramentas de trabalho como: Calculadora e as ferramentas do Office

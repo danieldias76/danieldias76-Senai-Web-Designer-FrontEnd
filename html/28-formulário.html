@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Campo de Formulário</h1>
+        <form action="processador.php" method="get">
+        <label for="campo_nome">Nome:</label><br>
+        <input type="text" name="_campo_nome" id="campo_nome" required placeholder="Nome Completo"><br><br>
+
+        <label for="campo_data">Data de Nascimento</label><br>
+        <input type="date" name="_campo_data_nascimento" id="campo_data"><br><br>
+            
+        <label for="campo_senha">Senha:</label></form>
+        <input type="password" name="_campo_senha" id="campo_senha" required><br></br>
+
+        <label for="campo_cor">Escolha uma Cor:</label><br>
+        <input type="color" name="_campo_cor" id="campo_cor"><br><br>
+        
+        <label for="campo_contato">Telefone:</label><br>
+        <input type="tel" name="_campo_contato" id="campo_contato" placeholder="ddd + tel"><br>
+        
+        
+        <p>Como nos conhecemos</p>
+        <label>
+            <input type="checkbox" name="_campo_tv" id="campo_tv">
+            TV
+        </label><br>
+        <label>
+            <input type="checkbox" name="_campo_internet" id="campo_internet">
+            internet
+        </label><br>
+        <label>
+            <input type="checkbox" name="_campo_jornais" id="campo_jornais">
+            Jornais
+        </label>
+        <label><br>
+            <input type="checkbox" name="_campo_outro" id="campo_outro">
+            Outro
+        </label><br><br>
+        <label for="campo_arquivo">Envie um arquivo</label>
+        <input type="file" name="_campo_arquivo" id="campo_arquivo"><br><br>
+        
+        <p>Defina o gênero</p>
+        <input type="radio" name="genero" id="campo_masculino">
+        <label for="campo_masculino">masculino</label><br>
+        <input type="radio" name="genero" id="campo_feminino">
+        <label for="campo_feminino">feminino</label><br>
+        <input type="radio" name="genero" id="campo_indefinido">
+        <label for="campo_indefinido">não responder</label><br><br>
+
+        <label for="campo_mensagem">Mensagem</label><br><br>
+        <textarea name="_campo_mensagem" id="campo_mensagem" rows="10" cols="10"></textarea><br><br>
+        <input type="submit" value="Enviar"><br>
+    </body>
+</html>

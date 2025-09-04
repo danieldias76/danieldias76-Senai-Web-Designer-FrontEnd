@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .caixaform{
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+        form{
+            background-color: black;
+            max-width: 500px;
+            height: 450px;
+            padding: 40px;
+            color: orange;
+            border-radius: 10px;
+            border: 3px solid orange;
+        }
+        form h1{
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .input-single{
+            position: relative;
+            margin: 20px 0;
+        }
+        .input-single label{
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+            transition: all 0.2s required;
+        }
+        .input{
+          background-color: black;
+          border: 0;
+          border-bottom: 2px solid white;
+          outline: none;
+        }
+        form .input-single .input:focus ~ label,
+        form .input-single .input:valid ~ label{
+            transform: translateY(-24px);
+            font-size: 12px;
+            color: orange;
+        }
+        
+    </style>
+    <title>Formulario</title>
+</head>
+
+<body>
+    <section class="formulario">
+        <div class="caixaform">
+            <form action="">
+                <h1>Entre em Contato</h1>
+                <div class="input-single">
+                    <h3>Nome Completo</h3>
+                    <input type="text" name="nome" id="nome-caixa" class="input" placeholder="Digite seu nome" required>
+                    <label for="nome-caixa"></label>
+                </div>
+                <div class="input-single">
+                    <h3>Email</h3>
+                    <input type="email" name="nome" id="nome-caixa" class="input" placeholder="Digite seu email" required>
+                    <label for="nome-caixa"></label>
+                </div>
+                <div class="input-single">
+                    <h3>Telefone</h3>
+                    <input type="text" name="nome" id="nome-caixa" class="input" placeholder="Digite seu Telefone" required>
+                    <label for="nome-caixa"></label>
+                </div>
+
+                <div class="btn"><input type="submit" value="Enviar "></div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

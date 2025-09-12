@@ -1,0 +1,6 @@
+NOTA 1 = 10
+NOTA 2 = 9
+NOTA 3 = 8
+NOTA 4 = 7 
+MÉDIA = (NOTA 1 + NOTA 2 + NOTA 3 + NOTA 4 ) / 4
+calcule MÉDIA

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador OU (||)</title>
+</head>
+
+<body>
+    Para verificarmos se um teste é verdaderio o operador "OU (||)" valida o todas as condições se apenas uma delas
+    for verdadeira.
+
+    <h2>Para entrar numa festa a pessoal precisar ser maior de 18 OU está acompanhada de um Adulto</h2>
+
+    <script>
+        let nome = window.prompt("Por favor, informe o seu nome:")
+        let idade = Number(window.prompt("Diga sua idade?"))
+        let acompanhante = window.prompt("Você está acompanhado(a) ?")
+        let teste = idade >=18 || acompanhante == 'Sim' ? nome + ", Bem-Vindo" : nome + ", Acesso Restrito"
+        window.alert(teste)
+    </script>
+</body>
+
+</html>

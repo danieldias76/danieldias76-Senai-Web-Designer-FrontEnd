@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador EE</title>
+</head>
+
+<body>
+
+    Realiza um teste que verifica se o o aluno está aprovado de acordo com as condições a seguir:
+    <br>
+    <code>
+        <pre>
+            Número de faltas <= 45 e Nota>= 50</45><br>
+                let faltas = Number(window.prompt("Quantas faltas do aluno?"))
+                let nota = Number(window.prompt("Qual a nota do aluno?"))
+                let resultado = faltas <= 45 && nota>=50 ? "Aprovado" : "Reprovado"
+                    window.alert(resultado)
+        </pre>
+    </code>
+            <script>
+                let faltas = Number(window.prompt("Quantas faltas do aluno?"))
+                let nota = Number(window.prompt("Qual a nota do aluno?"))
+
+                let resultado = faltas <= 45 && nota >= 50 ? "Aprovado" : "Reprovado"
+                window.alert(resultado)
+            </script>
+</body>
+
+</html>

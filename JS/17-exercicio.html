@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<body>
+    <script>
+        let nome = window.prompt("Digite seu Nome:")
+        let money = Number(window.prompt("Quanto você tem na carteira?"))
+        let conducao = window.prompt("Você possui carro?")
+        let clima = window.prompt("Como está o clima?")
+        let resultado = money>=500 && conducao == 'Sim' && clima == 'Sol'? nome + " você irá a praia " : nome + " você ficará em casa, vendo Chaves "
+        window.alert(resultado)
+    </script>
+</body>
+</html>

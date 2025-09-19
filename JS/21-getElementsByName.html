@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByName</title>
+</head>
+
+<body>
+    <p>Parágrafo 1</p>
+    <p>Parágrafo 2</p>
+    <p>Parágrafo 3</p>
+   
+    <br>
+    <br>
+
+    <script>
+        
+        let paragrafo1 = window.document.getElementsByTagName("p")[0]
+        window.document.write(paragrafo1.innerText)
+        paragrafo1.style.color="orange"
+
+        let paragrafo3 = window.document.getElementsByTagName("p")[2]
+        window.document.write(paragrafo3.innerText)
+
+        let paragrafo2 = window.document.getElementsByTagName("p")[1]
+        paragrafo2.style.color="darkblue"
+
+        let corpo = window.document.getElementsByTagName("body")[0]
+        corpo.style.backgroundColor="green"
+    </script>
+</body>
+
+</html>

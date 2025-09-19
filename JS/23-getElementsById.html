@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element by ID</title>
+</head>
+
+<body>
+    <div id="primeira">
+        <p id="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde cupiditate deserunt accusantium voluptates,
+            voluptatem alias nisi. Voluptas possimus distinctio facilis rem repellendus, soluta, fugiat culpa cumque
+            cupiditate tenetur sint suscipit!</p>
+    </div>
+    <div id="segunda">
+        <p>Porro dolor, nostrum labore ad dolore dolorem modi necessitatibus voluptatem quod, expedita nulla alias.
+            Optio, aliquid. Unde culpa officiis in obcaecati quae sint debitis. Accusantium totam quidem laudantium
+            facilis consequatur?</p>
+    </div>
+    <script>
+        let div1 = window.document.getElementById("primeira")
+        div1.style.backgroundColor="purple"
+
+        let text = window.document.getElementById("texto")
+        text.style.color="red"
+
+        let div2 = window.document.getElementById("segunda")
+        div2.style.backgroundColor="yellow"
+    </script>
+</body>
+
+</html>

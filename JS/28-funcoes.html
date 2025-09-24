@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #caixaRosa {
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+        }
+
+        #caixaVermelha {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            display: none;
+        }
+    </style>
+    <title>Funções</title>
+</head>
+
+<body>
+    <div id="caixaRosa" onmouseenter="desaparecerCaixa(); trocar()" ></div>
+    <div id="caixaVermelha"></div>
+    <script>
+        function desaparecerCaixa() {
+            let caixa = window.document.getElementById("caixaRosa")
+            caixa.style.display="none"
+        }
+        function trocar() {
+            let caixaRed = window.document.getElementById("caixaVermelha")
+            caixaRed.style.display = "block"
+        }
+    </script>
+</body>
+
+</html>

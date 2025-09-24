@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+
+<body>
+    <input type="text" name="campo_Nome" id="seu_Nome" placeholder="Digite seu nome"> <br>
+    <input type="number" name="campo_Nota1" id="primeira_Nota" placeholder="Informe a primeira nota"> <br>
+    <input type="number" name="campo_Nota2" id="segunda_Nota" placeholder="Informe a segunda nota"> <br>
+    <input type="number" name="campo_Nota3" id="terceira_Nota" placeholder="Informe a terceira nota"> <br>
+    <input type="number" name="campo_Nota4" id="quarta_Nota" placeholder="Informe a quarta nota"> <br>
+    <button onclick="executar()">Efetue</button><br>
+    <span id="resposta"></span>
+
+
+    <script>
+        function executar() {
+            let nome = (window.document.getElementById("seu_Nome").value)
+            let nota1 = Number(window.document.getElementById("primeira_Nota").value)
+            let nota2 = Number(window.document.getElementById("segunda_Nota").value)
+            let nota3 = Number(window.document.getElementById("terceira_Nota").value)
+            let nota4 = Number(window.document.getElementById("quarta_Nota").value)
+            let media = (nota1 + nota2 + nota3 + nota4) / 4
+            let resultado = media >= 6 ? nome  + ' você foi aprovado sua média é: ' + media : nome + ' você não foi aprovado sua média é: ' + media
+            let areaResultado = document.getElementById("resposta")
+            areaResultado.innerText = resultado
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturar Dados por ID</title>
+</head>
+<body>
+    <input type="number" name="campoValor1" id="valor1">
+    <input type="number" name="campoValor1" id="valor2">
+    <button id="botao">Calcular</button>
+    <p id="resultado"></p>
+    <script>
+        function efetuar(){
+            let primeirovalor = Number(valor1.value)
+            let segundovalor = Number(valor2.value)
+            let soma = primeirovalor + segundovalor
+            resultado.innerText = soma 
+        }
+        botao.addEventListener("click", efetuar)
+    </script>
+</body>
+</html>

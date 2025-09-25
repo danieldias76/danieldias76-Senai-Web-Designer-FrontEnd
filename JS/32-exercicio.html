@@ -5,18 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .form {
+            margin: 20px;
+            padding: 15px;
+            background-color: rgba(105, 143, 232, 0.655);
+            border-radius: 10px;
+            border: solid 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+        }
+
+        input {
+            background-color: aliceblue;
+            margin: 5px;
+            padding: 10px;
+            border: 1px rgb(224, 165, 165);
+            border-radius: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        button {
+            background-color: aliceblue;
+            margin: 10px;
+            padding: 10px;
+            border: 1px rgb(224, 165, 165);
+            border-radius: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        button:hover {
+            background-color: rgb(9, 240, 240);
+            color: white;
+            border: 1px solid black;
+
+        }
+
+        h1 {
+            margin: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        label {
+            margin: 5px;
+        }
+
+        #resposta {
+            text-align: center;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
-    <input type="text" name="campo_Nome" id="seu_Nome" placeholder="Digite seu nome"> <br>
-    <input type="number" name="campo_Nota1" id="primeira_Nota" placeholder="Informe a primeira nota"> <br>
-    <input type="number" name="campo_Nota2" id="segunda_Nota" placeholder="Informe a segunda nota"> <br>
-    <input type="number" name="campo_Nota3" id="terceira_Nota" placeholder="Informe a terceira nota"> <br>
-    <input type="number" name="campo_Nota4" id="quarta_Nota" placeholder="Informe a quarta nota"> <br>
-    <button onclick="executar()">Efetue</button><br>
-    <span id="resposta"></span>
-
-
+    <div class="form">
+        <h1>Boletim</h1>
+        <label for="nombre">Nome</label>
+        <input type="text" name="campo_Nome" id="seu_Nome" placeholder="Digite seu nome">
+        <label for="nombre">Artes</label>
+        <input type="number" name="campo_Nota1" id="primeira_Nota" placeholder="Informe a primeira nota">
+        <label for="nombre">Inglês</label>
+        <input type="number" name="campo_Nota2" id="segunda_Nota" placeholder="Informe a segunda nota">
+        <label for="nombre">Matemática</label>
+        <input type="number" name="campo_Nota3" id="terceira_Nota" placeholder="Informe a terceira nota">
+        <label for="nombre">Filosofia</label>
+        <input type="number" name="campo_Nota4" id="quarta_Nota" placeholder="Informe a quarta nota">
+        <button onclick="executar()">Efetue</button>
+        <div id="resposta"></div>
+    </div>
     <script>
         function executar() {
             let nome = (window.document.getElementById("seu_Nome").value)
@@ -25,7 +96,7 @@
             let nota3 = Number(window.document.getElementById("terceira_Nota").value)
             let nota4 = Number(window.document.getElementById("quarta_Nota").value)
             let media = (nota1 + nota2 + nota3 + nota4) / 4
-            let resultado = media >= 6 ? nome  + ' você foi aprovado sua média é: ' + media : nome + ' você não foi aprovado sua média é: ' + media
+            let resultado = media >= 6 ? nome + ' Você foi aprovado, parabéns! \n Sua média é: ' + media : nome + ' Você foi reprovado, \n sua média é: ' + media
             let areaResultado = document.getElementById("resposta")
             areaResultado.innerText = resultado
         }

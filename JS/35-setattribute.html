@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settAtttibute</title>
+</head>
+<body>
+    <img src="/css/imagens/s1.jpg" alt="exemplo" width="100px" id="foto1"><br>
+    <button id="botao">Trocar Foto</button>
+    <script>
+        function trocarFoto(){
+            foto1.setAttribute("src", "/css/imagens/s2.jpg" )
+            foto1.setAttribute("alt", "s1" )  
+        }
+        botao.addEventListener("click", trocarFoto)
+    </script>
+</body>
+</html>

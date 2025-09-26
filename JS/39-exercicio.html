@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<body>
+    <script>
+        let valorCompra = window.prompt("Infome o valor da compra:")
+        let cupom = window.prompt("Possui Cupom ?")
+        let calcular = valorCompra - 100 
+        if (valorCompra>1000 && cupom == "Sim"){ 
+            window.alert(`O valor atual da sua compra atual + cupom é ${calcular}`)
+        }
+        else {
+            window.alert(` O valor da compra é ${valorCompra}`)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 70px;
+    padding: 10px;
+}
+
+.valores {
+    display: flex;
+}
+
+.peso {
+    margin-left: 30px;
+}
+
+.valores,
+input,
+button {
+    display: flex;
+    margin-top: 10px;
+}
+
+input {
+    border-radius: 10px;
+    padding: 10px 1px;
+    border-color: blue;
+}
+
+.botaoAzul {
+    padding: 15px 50px;
+    border-radius: 20px;
+    background-color: blue;
+    border-color: blue;
+    color: white;
+    display: flex;
+    border-style: none;
+}
+
+.botaoLaranja {
+    padding: 15px 50px;
+    border-style: none;
+    color: white;
+    display: flex;
+    background-color: orangered;
+    border-radius: 20px;
+
+}
+th{
+    background-color: blue;
+    color: white;
+    width: 350px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+}

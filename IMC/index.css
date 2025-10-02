@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+#container{
+    width: 70%;
+    margin-bottom: 10px;
+}
+h1{
+    color: royalblue;
+    font-size: 4rem;
+}
+p{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+section{
+    display: flex;
+}
+section div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 24px;
+}
+label{
+    font-size: 0.8rem;
+}
+input{
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: solid 1px blue;
+    width: 110px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.calcular, .limpar{
+    padding: 10px 20px;
+    border-radius: 40px;
+    margin-top: 10px;
+    color: white;
+    cursor: pointer;
+    border: none;
+
+}
+.calcular{
+    background-color: navy;
+}
+.limpar{
+    background-color: orangered;
+}
+h2{
+    color: white;
+    background-color: navy;
+    font-size: 2rem;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 5px;
+}
+table{
+    margin-top: 20px;
+    width: 600px;
+    margin-left: 30px;
+    border: solid 1px black;
+}
+.centro td{
+    text-align: center;
+}
+tr{
+    border-bottom: 1px solid black;
+}
+#imc{
+    width: 150px;
+    height: 80px;
+    background-color: chocolate;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.colorir{
+    background-color: green;
+}

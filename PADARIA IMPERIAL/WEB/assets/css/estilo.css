@@ -1,0 +1,118 @@
+/* Reset Universal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Modo Global - Mobile */
+
+body{
+    background-color: #FFFAF5;
+    padding: 0 24px;
+    display: flex;
+    justify-content: center;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+header img{
+    width: 115px;
+    margin: 32px 0;
+}
+nav{
+    display: none;
+}
+main img{
+    /* Imagem responsiva */
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #462215;
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 2.4rem;
+}
+main p{
+    color: #462215;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    line-height: 30px;
+}
+footer {
+    background-color: #f8d0a6;
+    border-radius: 8px;
+    margin-top: 32px;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+footer h3{
+    font-size: 1.8rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #462215;
+    margin-bottom: 24px;
+}
+footer p{
+    color: #462215;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+}
+#btFechar, #btMenu{
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+#btFechar{
+    display: none;
+}
+#btMenu{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+/* Modo Desktop */
+@media(min-width: 1024px){
+    main img{
+        width: 100%;
+    }
+    #btMenu{
+       display: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        display: block;
+    }
+    nav ul{
+       list-style-type: none;
+       display: flex;
+       flex-direction: row;
+       text-align: center;
+       justify-content: center;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #462215;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.2rem;
+        margin: 0 5px;
+    }
+    nav ul li{
+        margin-left: 24px;
+    }
+    #container{
+        max-width: 1200px;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Modo Global */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 10px;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        div {
+            background-color: pink;
+            padding: 10px;
+            border-radius: 15px;
+            color: slateblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 2rem;
+            margin: 20px 0px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: purple;
+            background-color: aqua;
+            border-radius: 10px;
+            padding: 5px 10px;
+        }
+
+        li {
+           margin: 0px 5px;
+        }
+
+        main {
+            background-color: violet;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 10px 0px;
+        }
+
+        footer {
+            background-color: skyblue;
+            border-radius: 10px;
+            height: 100px;
+            margin-top: 10px;
+        }
+        /* modo Desktop */
+        @media(min-width:1204px) {
+            header {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            ul {
+                display: flex;
+            }
+
+            li {
+                margin: 0px 5px;
+            }
+        }
+    </style>
+    <title>Responsividade</title>
+</head>
+
+<body>
+    <header>
+        <div>Logo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p><span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam soluta eaque consectetur expedita amet
+                sequi suscipit, perspiciatis voluptates quae magni? Nemo doloribus suscipit repellat magnam aut dolorum
+                deleniti perspiciatis minus!</span><span>Suscipit fuga velit soluta unde debitis quae distinctio nulla
+                totam provident pariatur animi, necessitatibus voluptatibus aut mollitia explicabo voluptatem deserunt!
+                Vel, quos obcaecati eveniet nostrum ea optio sunt temporibus iure?</span><span>Dignissimos corrupti est
+                commodi porro expedita dicta dolores voluptatum, excepturi, veritatis dolore sit magnam deleniti
+                delectus. Sapiente sed labore exercitationem. Quae maxime sit veniam recusandae, accusamus iste
+                repudiandae itaque temporibus?</span><span>Ex nihil eaque temporibus expedita laudantium incidunt
+                quisquam voluptates nemo, eos deleniti inventore, ab possimus voluptas ducimus mollitia quaerat modi
+                molestiae perferendis quam nesciunt consequatur, culpa animi? Praesentium, ratione id?</span>
+            <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam soluta eaque consectetur expedita amet
+                sequi suscipit, perspiciatis voluptates quae magni? Nemo doloribus suscipit repellat magnam aut dolorum
+                deleniti perspiciatis minus!</span><span>Suscipit fuga velit soluta unde debitis quae distinctio nulla
+                totam provident pariatur animi, necessitatibus voluptatibus aut mollitia explicabo voluptatem deserunt!
+                Vel, quos obcaecati eveniet nostrum ea optio sunt temporibus iure?</span><span>Dignissimos corrupti est
+                commodi porro expedita dicta dolores voluptatum, excepturi, veritatis dolore sit magnam deleniti
+                delectus. Sapiente sed labore exercitationem. Quae maxime sit veniam recusandae, accusamus iste
+                repudiandae itaque temporibus?</span><span>Ex nihil eaque temporibus expedita laudantium incidunt
+                quisquam voluptates nemo, eos deleniti inventore, ab possimus voluptas ducimus mollitia quaerat modi
+                molestiae perferendis quam nesciunt consequatur, culpa animi? Praesentium, ratione id?</span>
+        </p>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

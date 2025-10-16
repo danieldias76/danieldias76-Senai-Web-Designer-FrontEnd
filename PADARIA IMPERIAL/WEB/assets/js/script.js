@@ -1,6 +1,6 @@
 function exibeMenu(){
     let menu = document.getElementsByTagName("nav")[0]
-    menu.setAttribute("class", "mostrarMenu")
+    menu.setAttribute("class", "exibirMenu")
     btMenu.style.display = "none"
     btFechar.style.display = "inline"
 }
@@ -27,7 +27,7 @@ function verificaTela(){
         // Modo mobile
         btMenu.style.display = "block";
         btFechar.style.display = "none";
-        menu.className = "ocultarMenu";
+        menu.className = "ocultarMenu"; 
         menu.style.display = "none";
     }
 }
